@@ -9,7 +9,8 @@
 #import "MainViewController.h"
 
 @interface MainViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *discordianDateLabel;
+@property (weak, nonatomic) IBOutlet UIDatePicker *normalDatePicker;
 @end
 
 @implementation MainViewController
@@ -24,6 +25,9 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)normalDateChanged {
 }
 
 @end
