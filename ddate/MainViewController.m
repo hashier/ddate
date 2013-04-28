@@ -7,10 +7,12 @@
 //
 
 #import "MainViewController.h"
+#import "Ddate.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *discordianDateLabel;
 @property (weak, nonatomic) IBOutlet UIDatePicker *normalDatePicker;
+@property (strong, nonatomic) Ddate *ddate;
 @end
 
 @implementation MainViewController
@@ -18,7 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.discordianDateLabel.numberOfLines = 4;
+    self.ddate = [[Ddate alloc] init];
+    [self normalDateChanged];
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,6 +32,8 @@
 }
 
 - (IBAction)normalDateChanged {
+    self.ddate.date = self.normalDatePicker.date;
+    self.discordianDateLabel.text = [self.ddate ddate];
 }
 
 @end

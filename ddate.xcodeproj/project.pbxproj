@@ -23,6 +23,7 @@
 		006D45EE172AA68D005111D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D45C9172AA68D005111D9 /* Foundation.framework */; };
 		006D45F6172AA68D005111D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 006D45F4172AA68D005111D9 /* InfoPlist.strings */; };
 		006D45F9172AA68D005111D9 /* ddateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 006D45F8172AA68D005111D9 /* ddateTests.m */; };
+		006D4607172AB8E3005111D9 /* Ddate.m in Sources */ = {isa = PBXBuildFile; fileRef = 006D4606172AB8E3005111D9 /* Ddate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		006D45F5172AA68D005111D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		006D45F7172AA68D005111D9 /* ddateTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ddateTests.h; sourceTree = "<group>"; };
 		006D45F8172AA68D005111D9 /* ddateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ddateTests.m; sourceTree = "<group>"; };
+		006D4605172AB8E3005111D9 /* Ddate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ddate.h; sourceTree = "<group>"; };
+		006D4606172AB8E3005111D9 /* Ddate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ddate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		006D45CD172AA68D005111D9 /* ddate */ = {
 			isa = PBXGroup;
 			children = (
+				006D4605172AB8E3005111D9 /* Ddate.h */,
+				006D4606172AB8E3005111D9 /* Ddate.m */,
 				006D45D6172AA68D005111D9 /* MainAppDelegate.h */,
 				006D45D7172AA68D005111D9 /* MainAppDelegate.m */,
 				006D45DF172AA68D005111D9 /* MainStoryboard.storyboard */,
@@ -274,6 +279,7 @@
 				006D45D4172AA68D005111D9 /* main.m in Sources */,
 				006D45D8172AA68D005111D9 /* MainAppDelegate.m in Sources */,
 				006D45E4172AA68D005111D9 /* MainViewController.m in Sources */,
+				006D4607172AB8E3005111D9 /* Ddate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +460,7 @@
 				006D45FE172AA68D005111D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		006D45FF172AA68D005111D9 /* Build configuration list for PBXNativeTarget "ddateTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +469,7 @@
 				006D4601172AA68D005111D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
