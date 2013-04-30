@@ -55,12 +55,12 @@
         return [[NSString alloc] initWithFormat:@"St. Tib's Day, in the YOLD %d", [self dyear]];
     }
     
-    return [[NSString alloc] initWithFormat:@"%@ %d. %@, in the YOLD %d\n\n%@", [[self dweekday] description], [self dayInSeason], [[self dseason] description], [self dyear], [[self holyday] description]];
+    return [[NSString alloc] initWithFormat:@"%@ %d. %@, in the YOLD %d\n\n%@", [[self dweekday] description], [self dayInSeason], [[self dseason] description], [self dyear], [[self dholyday] description]];
 }
 
 #pragma mark - Discordian calendar
 
-- (NSString *)leapDay {
+- (NSString *)dleapDay {
     BOOL isLeap = [self isLeapYear];
     
     if (isLeap && [self month] == 2 && [self day] == 29) {
@@ -78,7 +78,7 @@
     return (ddoy % 73 == 0 ? 73 : ddoy % 73);
 }
 
-- (NSString *)holyday {
+- (NSString *)dholyday {
     NSUInteger ddoy = [self ddayOfYear];
     NSUInteger dis = [self dayInSeason];
     if (dis == 5) {
@@ -91,11 +91,11 @@
 }
 
 - (NSString *)dweekday {
-    return [self weekday:(([self ddayOfYear]-1)%5)];
+    return [self weekday:(([self ddayOfYear] - 1) % 5)];
 }
 
 - (NSString *)dseason {
-    return [self season:([self ddayOfYear] / 73)];
+    return [self season:(([self ddayOfYear] - 1) / 73)];
 }
 
 - (NSUInteger)ddayOfYear {

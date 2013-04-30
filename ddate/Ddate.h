@@ -19,10 +19,10 @@
 - (NSString *)ddate;
 // if you want to build your own string
 // don't forget to first check if it's a leap day
-- (NSString *)leapDay; // will return an empty string on non leap days
+- (NSString *)dleapDay; // will return an empty string on non leap days
 - (NSUInteger)dyear;
 - (NSUInteger)dayInSeason;
-- (NSString *)holyday;
+- (NSString *)dholyday;
 - (NSString *)dweekday;
 - (NSString *)dseason;
 - (NSUInteger)ddayOfYear;
