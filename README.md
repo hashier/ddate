@@ -9,4 +9,3 @@ ToDo and ideas
 
 - iPad
 - discordian -> normal dates
-- tests
