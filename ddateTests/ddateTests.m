@@ -115,4 +115,14 @@
     STAssertTrue([self.testObj isLeapYear], @"2004 is a leap year");
 }
 
+- (void)testLeapDay {
+    // Fri Feb 29 13:12:12 2008
+    self.testObj = [[Ddate alloc] initWithDate:[[NSDate alloc] initWithTimeIntervalSince1970:1204287132]];
+    STAssertTrue([[self.testObj dleapDay] isEqualToString:@"St. Tib's Day, in the YOLD 3174"], @"Leap day 2008");
+    
+    // Sun Apr  1 14:12:12 2007
+    self.testObj = [[Ddate alloc] initWithDate:[[NSDate alloc] initWithTimeIntervalSince1970:1175429532]];
+    STAssertTrue([[self.testObj dleapDay] isEqualToString:@""], @"Is not a leap day");
+}
+
 @end
