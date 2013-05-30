@@ -17,11 +17,14 @@
 
 @implementation MainViewController
 
+- (Ddate *)ddate {
+    if (!_ddate) _ddate = [[Ddate alloc] init];
+    return _ddate;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.discordianDateLabel.numberOfLines = 4;
-    self.ddate = [[Ddate alloc] init];
     [self normalDateChanged];
 }
 
