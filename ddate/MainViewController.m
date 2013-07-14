@@ -7,19 +7,19 @@
 //
 
 #import "MainViewController.h"
-#import "Ddate.h"
+#import "NSDate+ddate.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *discordianDateLabel;
 @property (weak, nonatomic) IBOutlet UIDatePicker *normalDatePicker;
-@property (strong, nonatomic) Ddate *ddate;
+@property (strong, nonatomic) NSDate *date;
 @end
 
 @implementation MainViewController
 
-- (Ddate *)ddate {
-    if (!_ddate) _ddate = [[Ddate alloc] init];
-    return _ddate;
+- (NSDate *)ddate {
+    if (!_date) _date = [[NSDate alloc] init];
+    return _date;
 }
 
 - (void)viewDidLoad
@@ -35,8 +35,8 @@
 }
 
 - (IBAction)normalDateChanged {
-    self.ddate.date = self.normalDatePicker.date;
-    self.discordianDateLabel.text = [self.ddate ddate];
+    self.date = self.normalDatePicker.date;
+    self.discordianDateLabel.text = [self.date ddate];
 }
 
 @end

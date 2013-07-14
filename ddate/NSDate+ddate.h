@@ -1,18 +1,14 @@
 //
-//  Ddate.h
+//  NSDate+ddate.h
 //  ddate
 //
-//  Created by Christopher Loessl on 4/26/13.
+//  Created by Christopher Loessl on 7/14/13.
 //  Copyright (c) 2013 Christopher Loessl. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface Ddate : NSObject
-@property (strong, nonatomic) NSDate *date;
-
-- (id)initWithDate:(NSDate *)date;
-- (id)init;
+@interface NSDate (ddate)
 
 #pragma mark - Discordian calendar
 // all in all, checks for leap days and returns everything (incl. holydays)

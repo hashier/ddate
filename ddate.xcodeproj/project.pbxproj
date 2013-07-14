@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0033C6651793288E0086856E /* NSDate+ddate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C6641793288E0086856E /* NSDate+ddate.m */; };
 		006D45C8172AA68D005111D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D45C7172AA68D005111D9 /* UIKit.framework */; };
 		006D45CA172AA68D005111D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D45C9172AA68D005111D9 /* Foundation.framework */; };
 		006D45CC172AA68D005111D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D45CB172AA68D005111D9 /* CoreGraphics.framework */; };
@@ -23,7 +24,6 @@
 		006D45EE172AA68D005111D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D45C9172AA68D005111D9 /* Foundation.framework */; };
 		006D45F6172AA68D005111D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 006D45F4172AA68D005111D9 /* InfoPlist.strings */; };
 		006D45F9172AA68D005111D9 /* ddateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 006D45F8172AA68D005111D9 /* ddateTests.m */; };
-		006D4607172AB8E3005111D9 /* Ddate.m in Sources */ = {isa = PBXBuildFile; fileRef = 006D4606172AB8E3005111D9 /* Ddate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0033C6631793288E0086856E /* NSDate+ddate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ddate.h"; sourceTree = "<group>"; };
+		0033C6641793288E0086856E /* NSDate+ddate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ddate.m"; sourceTree = "<group>"; };
 		006D45C4172AA68D005111D9 /* ddate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		006D45C7172AA68D005111D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		006D45C9172AA68D005111D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,8 +61,6 @@
 		006D45F5172AA68D005111D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		006D45F7172AA68D005111D9 /* ddateTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ddateTests.h; sourceTree = "<group>"; };
 		006D45F8172AA68D005111D9 /* ddateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ddateTests.m; sourceTree = "<group>"; };
-		006D4605172AB8E3005111D9 /* Ddate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ddate.h; sourceTree = "<group>"; };
-		006D4606172AB8E3005111D9 /* Ddate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ddate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +120,6 @@
 		006D45CD172AA68D005111D9 /* ddate */ = {
 			isa = PBXGroup;
 			children = (
-				006D4605172AB8E3005111D9 /* Ddate.h */,
-				006D4606172AB8E3005111D9 /* Ddate.m */,
 				006D45D6172AA68D005111D9 /* MainAppDelegate.h */,
 				006D45D7172AA68D005111D9 /* MainAppDelegate.m */,
 				006D45DF172AA68D005111D9 /* MainStoryboard.storyboard */,
@@ -135,6 +133,8 @@
 		006D45CE172AA68D005111D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0033C6631793288E0086856E /* NSDate+ddate.h */,
+				0033C6641793288E0086856E /* NSDate+ddate.m */,
 				006D45CF172AA68D005111D9 /* ddate-Info.plist */,
 				006D45D0172AA68D005111D9 /* InfoPlist.strings */,
 				006D45D3172AA68D005111D9 /* main.m */,
@@ -279,7 +279,7 @@
 				006D45D4172AA68D005111D9 /* main.m in Sources */,
 				006D45D8172AA68D005111D9 /* MainAppDelegate.m in Sources */,
 				006D45E4172AA68D005111D9 /* MainViewController.m in Sources */,
-				006D4607172AB8E3005111D9 /* Ddate.m in Sources */,
+				0033C6651793288E0086856E /* NSDate+ddate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

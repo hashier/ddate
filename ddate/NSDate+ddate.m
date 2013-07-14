@@ -1,34 +1,14 @@
 //
-//  Ddate.m
+//  NSDate+ddate.m
 //  ddate
 //
-//  Created by Christopher Loessl on 4/26/13.
+//  Created by Christopher Loessl on 7/14/13.
 //  Copyright (c) 2013 Christopher Loessl. All rights reserved.
 //
 
-#import "Ddate.h"
+#import "NSDate+ddate.h"
 
-@interface Ddate()
-
-@end
-
-@implementation Ddate
-
-- (id)init {
-    self = [super init];
-    if (self) {
-        _date = [[NSDate alloc] init];
-    }
-    return self;
-}
-
-- (id)initWithDate:(NSDate *)date {
-    self = [self init];
-    if (self) {
-        _date = date;
-    }
-    return self;
-}
+@implementation NSDate (ddate)
 
 #pragma mark - Arrays
 
@@ -111,22 +91,22 @@
 
 - (NSUInteger)dayOfYear {
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSUInteger dayOfYear = [gregorian ordinalityOfUnit:NSDayCalendarUnit inUnit:NSYearCalendarUnit forDate:self.date];
+    NSUInteger dayOfYear = [gregorian ordinalityOfUnit:NSDayCalendarUnit inUnit:NSYearCalendarUnit forDate:self];
     return dayOfYear;
 }
 
 - (NSInteger)day {
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit fromDate:self.date];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit fromDate:self];
     return [components day];
 }
 
 - (NSInteger)month {
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit fromDate:self.date];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit fromDate:self];
     return [components month];
 }
 
 - (NSInteger)year {
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.date];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self];
     return [components year];
 }
 
