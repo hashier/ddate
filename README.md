@@ -7,7 +7,7 @@ Convert normal boring dates to cool discordian ones
 ToDo and ideas
 --------------
 
-See issuees tracker
+See issues tracker
 
 
 License
