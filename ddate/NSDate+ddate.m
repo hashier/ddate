@@ -29,13 +29,15 @@
 }
 
 - (NSString *)ddate {
-    BOOL isLeap = [self isLeapYear];
-    
-    if (isLeap && [self month] == 2 && [self day] == 29) {
-        return [[NSString alloc] initWithFormat:@"St. Tib's Day, in the YOLD %d", [self dyear]];
+    NSString *string;
+
+    string = [self dleapDay];
+    if (![string isEqualToString:@""]) {
+        return string;
     }
-    
-    return [[NSString alloc] initWithFormat:@"%@ %d. %@, in the YOLD %d\n\n%@", [[self dweekday] description], [self dayInSeason], [[self dseason] description], [self dyear], [[self dholyday] description]];
+    string = [[NSString alloc] initWithFormat:@"%@ %d. %@, in the YOLD %d\n\n%@", [[self dweekday] description], [self dayInSeason], [[self dseason] description], [self dyear], [[self dholyday] description]];
+
+    return string;
 }
 
 #pragma mark - Discordian calendar

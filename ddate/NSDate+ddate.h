@@ -21,10 +21,10 @@
 - (NSString *)dholyday;
 - (NSString *)dweekday;
 - (NSString *)dseason;
-- (NSUInteger)ddayOfYear;
+- (NSUInteger)ddayOfYear; // this returns 356 EVEN in leap years! NEEDED for ddate
 
 #pragma mark - Gregorian calendar
-- (NSUInteger)dayOfYear;
+- (NSUInteger)dayOfYear; // this actually return 366 in leap years!
 - (NSInteger)day;
 - (NSInteger)month;
 - (NSInteger)year;
