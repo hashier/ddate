@@ -12,15 +12,9 @@
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *discordianDateLabel;
 @property (weak, nonatomic) IBOutlet UIDatePicker *normalDatePicker;
-@property (strong, nonatomic) NSDate *date;
 @end
 
 @implementation MainViewController
-
-- (NSDate *)ddate {
-    if (!_date) _date = [[NSDate alloc] init];
-    return _date;
-}
 
 - (void)viewDidLoad
 {
@@ -28,15 +22,25 @@
     [self normalDateChanged];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)normalDateChanged {
+    self.discordianDateLabel.text = [self.normalDatePicker.date ddate];
 }
 
-- (IBAction)normalDateChanged {
-    self.date = self.normalDatePicker.date;
-    self.discordianDateLabel.text = [self.date ddate];
+- (IBAction)swipeRight:(UISwipeGestureRecognizer *)sender {
+    self.normalDatePicker.date = [self.normalDatePicker.date dateByAddingTimeInterval:-60*60*24*1];
+    [self normalDateChanged];
+}
+
+- (IBAction)swipeLeft:(UISwipeGestureRecognizer *)sender {
+    self.normalDatePicker.date = [self.normalDatePicker.date dateByAddingTimeInterval:60*60*24*1];
+    [self normalDateChanged];
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake) {
+        self.normalDatePicker.date = [NSDate date];
+        [self normalDateChanged];
+    }
 }
 
 @end
