@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D2DCA4D4-500B-44BA-BE07-8314027A25FA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ddate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9DC03CB9-757B-48EA-A325-6B73B8693924</key>
+		<string>ssh://github.com/hashier/ddate.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ddate.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9DC03CB9-757B-48EA-A325-6B73B8693924</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/hashier/ddate.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9DC03CB9-757B-48EA-A325-6B73B8693924</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9DC03CB9-757B-48EA-A325-6B73B8693924</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ddate</string>
+		</dict>
+	</array>
+</dict>
+</plist>
