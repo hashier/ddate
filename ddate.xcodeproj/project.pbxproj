@@ -15,9 +15,6 @@
 		006D45D2172AA68D005111D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 006D45D0172AA68D005111D9 /* InfoPlist.strings */; };
 		006D45D4172AA68D005111D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 006D45D3172AA68D005111D9 /* main.m */; };
 		006D45D8172AA68D005111D9 /* MainAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 006D45D7172AA68D005111D9 /* MainAppDelegate.m */; };
-		006D45DA172AA68D005111D9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 006D45D9172AA68D005111D9 /* Default.png */; };
-		006D45DC172AA68D005111D9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006D45DB172AA68D005111D9 /* Default@2x.png */; };
-		006D45DE172AA68D005111D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006D45DD172AA68D005111D9 /* Default-568h@2x.png */; };
 		006D45E1172AA68D005111D9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006D45DF172AA68D005111D9 /* MainStoryboard.storyboard */; };
 		006D45E4172AA68D005111D9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006D45E3172AA68D005111D9 /* MainViewController.m */; };
 		006D45EC172AA68D005111D9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D45EB172AA68D005111D9 /* SenTestingKit.framework */; };
@@ -51,9 +48,6 @@
 		006D45D5172AA68D005111D9 /* ddate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ddate-Prefix.pch"; sourceTree = "<group>"; };
 		006D45D6172AA68D005111D9 /* MainAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainAppDelegate.h; sourceTree = "<group>"; };
 		006D45D7172AA68D005111D9 /* MainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainAppDelegate.m; sourceTree = "<group>"; };
-		006D45D9172AA68D005111D9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		006D45DB172AA68D005111D9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		006D45DD172AA68D005111D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		006D45E0172AA68D005111D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		006D45E2172AA68D005111D9 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		006D45E3172AA68D005111D9 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -127,7 +121,6 @@
 				006D45DF172AA68D005111D9 /* MainStoryboard.storyboard */,
 				006D45E2172AA68D005111D9 /* MainViewController.h */,
 				006D45E3172AA68D005111D9 /* MainViewController.m */,
-				002F5799179CA1040034CD24 /* Images.xcassets */,
 				006D45CE172AA68D005111D9 /* Supporting Files */,
 			);
 			path = ddate;
@@ -142,9 +135,7 @@
 				006D45D0172AA68D005111D9 /* InfoPlist.strings */,
 				006D45D3172AA68D005111D9 /* main.m */,
 				006D45D5172AA68D005111D9 /* ddate-Prefix.pch */,
-				006D45D9172AA68D005111D9 /* Default.png */,
-				006D45DB172AA68D005111D9 /* Default@2x.png */,
-				006D45DD172AA68D005111D9 /* Default-568h@2x.png */,
+				002F5799179CA1040034CD24 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,10 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006D45D2172AA68D005111D9 /* InfoPlist.strings in Resources */,
-				006D45DA172AA68D005111D9 /* Default.png in Resources */,
-				006D45DC172AA68D005111D9 /* Default@2x.png in Resources */,
 				002F579A179CA1040034CD24 /* Images.xcassets in Resources */,
-				006D45DE172AA68D005111D9 /* Default-568h@2x.png in Resources */,
 				006D45E1172AA68D005111D9 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
