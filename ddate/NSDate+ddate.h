@@ -21,7 +21,7 @@
 /**
  Returns a string that can be directly displayed. It takes care of everything like leap days and discordian holydays
  
- @return A complete ddate string which has taken care of everything.
+ @return A complete ddate string which has taken care of everything. It has two new lines at the end for formatting purposes (e.g. to seperate holydays from the ddate).
  */
 - (NSString *)ddate;
 

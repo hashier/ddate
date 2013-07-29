@@ -155,6 +155,12 @@
     testString = @"Setting Orange 73. The Aftermath, in the YOLD 3166\n\n";
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:978224461];
     STAssertTrue([[self.testObj ddate] isEqualToString:testString], @"31.12.2000 (leap)");
+    
+    // 29.02.2000
+    testString = @"St. Tib's Day, in the YOLD 3166";
+    self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:951822671];
+    STAssertTrue([[self.testObj ddate] isEqualToString:testString], @"29.02.2000 (leap)");
+
 }
 
 // - (BOOL)isLeapYear;
