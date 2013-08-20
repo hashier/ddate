@@ -8,13 +8,21 @@ The name derives from the Linux/Unix command line tool named `ddate` that printe
 
 There is ana iOS project included in the source so you can see how to use it.
 
+Use swipe left/right to change date and shake to get back to today's date.
 
-Doc
----
+
+Documentation
+-------------
 
 You can simply build your own documentation with:
 
         appledoc --project-name="ddate" --project-company="Christopher Loessl" --company-id="org.loessl" --project-version="1.0" ddate
+
+
+Screenshot
+----------
+
+![Screenshot](http://loessl.org/projekte/ddate/images/screenshot01.png)
 
 
 ToDo and ideas
