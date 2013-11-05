@@ -16,7 +16,7 @@ Documentation
 
 You can simply build your own documentation with:
 
-        appledoc --project-name="ddate" --project-company="Christopher Loessl" --company-id="org.loessl" --project-version="1.0" ddate
+    appledoc --project-name="ddate" --project-company="Christopher Loessl" --company-id="org.loessl" --project-version="1.0" ddate
 
 
 Screenshot
