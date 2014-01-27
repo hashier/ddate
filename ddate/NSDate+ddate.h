@@ -58,7 +58,7 @@
 - (NSString *)dseason;
 
 /**
- This returns 356 EVEN in leap years! NEEDED for ddate.
+ This returns 365 EVEN in leap years! NEEDED for ddate.
  
  @return Returns the day of the year how ddate needs it.
  */
