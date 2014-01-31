@@ -19,7 +19,7 @@ You can simply build your own documentation with:
 
 ## Screenshot
 
-![Screenshot](http://loessl.org/projekte/ddate/images/iphone_white_angle2.png)
+![Screenshot](https://github.com/hashier/ddate/raw/master/images/iphone_white_angle2.png)
 
 
 ## ToDo and ideas
