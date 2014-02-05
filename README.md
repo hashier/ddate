@@ -24,7 +24,7 @@ You can simply build your own documentation with:
 
 ## ToDo and ideas
 
-See issues tracker
+See TODO file
 
 
 ## License
