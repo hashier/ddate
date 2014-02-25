@@ -1,7 +1,7 @@
 # ddate
 
 Convert normal boring dates to cool discordian ones.
-This is implemented as a category so just drop the files into your project and NSDate automatically gets the ability to convert dates to discordian format.
+This is implemented as a category so just drop the files into your project and NSDate automatically gets extended with the ability to convert dates to discordian format.
 
 The name derives from the Linux/Unix command line tool named `ddate` that printed the current discordian date.
 
