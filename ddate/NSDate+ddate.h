@@ -23,81 +23,81 @@
  
  @return A complete ddate string which has taken care of everything. It has two new lines at the end for formatting purposes (e.g. to seperate holydays from the ddate).
  */
-- (NSString *)ddate;
+- (NSString *)chl_ddate;
 
 /**
  Will return an empty string on non leap days.
  
  @return On leap days it returns "St. Tib's Day, in the YOLD %d" otherwise it returns @"".
  */
-- (NSString *)dleapDay;
+- (NSString *)chl_dleapDay;
 
 /**
  @return Returns back the YOLD
  */
-- (NSUInteger)dyear;
+- (NSUInteger)chl_dyear;
 
 /**
  @return Returns the current day in the season.
  */
-- (NSUInteger)dayInSeason;
+- (NSUInteger)chl_dayInSeason;
 
 /**
  @return Returns apostel (eg Mungday) or holyday (eg. Chaoflux) on holydays and @"" if date is not a holyday.
  */
-- (NSString *)dholyday;
+- (NSString *)chl_dholyday;
 
 /**
  @return Retuns The weekday (eg. Sweetmorn).
  */
-- (NSString *)dweekday;
+- (NSString *)chl_dweekday;
 
 /**
  @return Retuns The weekday (eg. Chaos).
  */
-- (NSString *)dseason;
+- (NSString *)chl_dseason;
 
 /**
- This returns 365 EVEN in leap years! NEEDED for ddate.
+ This returns 365 on 31.12. EVEN in leap years! NEEDED for ddate.
  
  @return Returns the day of the year how ddate needs it.
  */
-- (NSUInteger)ddayOfYear;
+- (NSUInteger)chl_ddayOfYear;
 
 #pragma mark - Gregorian calendar
 
 /**
- This returns 366 in leap years.
+ This returns 366 on 31.12. in leap years.
  
  @return Returns day in year.
  */
-- (NSUInteger)dayOfYear;
+- (NSUInteger)chl_dayOfYear;
 
 /**
  @return Returns day in month.
  */
-- (NSInteger)day;
+- (NSInteger)chl_day;
 
 /**
  @return Returns month in year.
  */
-- (NSInteger)month;
+- (NSInteger)chl_month;
 
 /**
  @return returns the year.
  */
-- (NSInteger)year;
+- (NSInteger)chl_year;
 
 /**
  @return Returns TRUE in leap years.
  */
-- (BOOL)isLeapYear;
+- (BOOL)chl_isLeapYear;
 
 /**
  Is today's day a leap day?
  
  @returns Returns TRUE if today's day is a leap day.
  */
-- (BOOL)isLeapDay;
+- (BOOL)chl_isLeapDay;
 
 @end

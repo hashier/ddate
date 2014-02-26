@@ -23,7 +23,7 @@
 }
 
 - (IBAction)normalDateChanged {
-    self.discordianDateLabel.text = [self.normalDatePicker.date ddate];
+    self.discordianDateLabel.text = [self.normalDatePicker.date chl_ddate];
 }
 
 - (IBAction)swipeRight:(UISwipeGestureRecognizer *)sender {
