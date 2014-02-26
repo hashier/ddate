@@ -35,7 +35,7 @@
 /**
  @return Returns back the YOLD
  */
-- (NSUInteger)chl_dyear;
+- (NSInteger)chl_dyear;
 
 /**
  @return Returns the current day in the season.

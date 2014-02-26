@@ -12,19 +12,19 @@
 
 #pragma mark - Arrays
 
-- (NSString *)weekday:(NSInteger)in {
+- (NSString *)weekday:(NSUInteger)in {
     return @[@"Sweetmorn", @"Boomtime", @"Pungenday", @"Prickle-Prickle", @"Setting Orange"][in];
 }
 
-- (NSString *)season:(NSInteger)in {
+- (NSString *)season:(NSUInteger)in {
     return @[@"Chaos", @"Discord", @"Confusion", @"Bureaucracy", @"The Aftermath"][in];
 }
 
-- (NSString *)apostle:(NSInteger)in {
+- (NSString *)apostle:(NSUInteger)in {
     return @[@"Mungday", @"Mojoday", @"Syaday", @"Zaraday", @"Maladay"][in];
 }
 
-- (NSString *)holiday:(NSInteger)in {
+- (NSString *)holiday:(NSUInteger)in {
     return @[@"Chaoflux", @"Discoflux", @"Confuflux", @"Bureflux", @"Afflux"][in];
 }
 
@@ -51,7 +51,7 @@
     return @"";
 }
 
-- (NSUInteger)chl_dyear {
+- (NSInteger)chl_dyear {
     return [self chl_year] + 1166;
 }
 
@@ -113,20 +113,12 @@
 }
 
 - (BOOL)chl_isLeapDay {
-    if ([self chl_isLeapYear] && [self chl_month] == 2 && [self chl_day] == 29) {
-        return YES;
-    } else {
-        return NO;
-    }
+    return [self chl_isLeapYear] && [self chl_month] == 2 && [self chl_day] == 29;
 }
 
 - (BOOL)chl_isLeapYear {
-    NSUInteger year = [self chl_year];
-    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-        return YES;
-    } else {
-        return NO;
-    }
+    NSInteger year = [self chl_year];
+    return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
 }
 
 @end
