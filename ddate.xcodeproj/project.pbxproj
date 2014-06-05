@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002D918017FAF8E900092BD1 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002D917F17FAF8E900092BD1 /* Crashlytics.framework */; };
 		002F579A179CA1040034CD24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002F5799179CA1040034CD24 /* Images.xcassets */; };
 		0033C6651793288E0086856E /* NSDate+ddate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C6641793288E0086856E /* NSDate+ddate.m */; };
 		006D45C8172AA68D005111D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D45C7172AA68D005111D9 /* UIKit.framework */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002D917F17FAF8E900092BD1 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		002F5799179CA1040034CD24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0033C6631793288E0086856E /* NSDate+ddate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ddate.h"; sourceTree = "<group>"; };
 		0033C6641793288E0086856E /* NSDate+ddate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ddate.m"; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 			files = (
 				006D45C8172AA68D005111D9 /* UIKit.framework in Frameworks */,
 				006D45CA172AA68D005111D9 /* Foundation.framework in Frameworks */,
-				002D918017FAF8E900092BD1 /* Crashlytics.framework in Frameworks */,
 				006D45CC172AA68D005111D9 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,7 +105,6 @@
 		006D45C6172AA68D005111D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				002D917F17FAF8E900092BD1 /* Crashlytics.framework */,
 				006D45C7172AA68D005111D9 /* UIKit.framework */,
 				006D45C9172AA68D005111D9 /* Foundation.framework */,
 				006D45CB172AA68D005111D9 /* CoreGraphics.framework */,
@@ -271,7 +267,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Crashlytics.framework/run 3daa33d14c1dc4ccb0b5c7f8070f2dad519462de";
+			shellScript = "#./Crashlytics.framework/run 3daa33d14c1dc4ccb0b5c7f8070f2dad519462de";
 		};
 		006D45E8172AA68D005111D9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -422,10 +418,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/hashier/Dropbox/src/projekte/apple/ddate,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ddate/ddate-Prefix.pch";
 				INFOPLIST_FILE = "ddate/ddate-Info.plist";
@@ -440,10 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/hashier/Dropbox/src/projekte/apple/ddate,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ddate/ddate-Prefix.pch";
 				INFOPLIST_FILE = "ddate/ddate-Info.plist";
