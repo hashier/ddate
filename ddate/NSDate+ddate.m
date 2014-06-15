@@ -35,7 +35,7 @@
     if (![string isEqualToString:@""]) {
         return string;
     }
-    string = [[NSString alloc] initWithFormat:@"%@ %d. %@, in the YOLD %d\n\n%@", [[self chl_dweekday] description], [self chl_dayInSeason], [[self chl_dseason] description], [self chl_dyear], [[self chl_dholyday] description]];
+    string = [[NSString alloc] initWithFormat:@"%@ %lu. %@, in the YOLD %ld\n\n%@", [[self chl_dweekday] description], (unsigned long)[self chl_dayInSeason], [[self chl_dseason] description], (long)[self chl_dyear], [[self chl_dholyday] description]];
 
     return string;
 }
@@ -46,7 +46,7 @@
     BOOL isLeap = [self chl_isLeapYear];
     
     if (isLeap && [self chl_month] == 2 && [self chl_day] == 29) {
-        return [[NSString alloc] initWithFormat:@"St. Tib's Day, in the YOLD %d", [self chl_dyear]];
+        return [[NSString alloc] initWithFormat:@"St. Tib's Day, in the YOLD %ld", (long)[self chl_dyear]];
     }
     return @"";
 }
@@ -57,7 +57,7 @@
 
 - (NSUInteger)chl_dayInSeason {
     NSUInteger ddoy = [self chl_ddayOfYear];
-    return (ddoy % 73 == 0 ? 73 : ddoy % 73);
+    return (NSUInteger) (ddoy % 73 == 0 ? 73 : ddoy % 73);
 }
 
 - (NSString *)chl_dholyday {

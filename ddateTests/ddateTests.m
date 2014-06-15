@@ -69,20 +69,20 @@
 
     // 1.1.1999 (!leap)
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:915156182];
-    testString = [[NSString alloc] initWithFormat:@"%@ %d %@ %d",
+    testString = [[NSString alloc] initWithFormat:@"%@ %lu %@ %ld",
                                                   [[self.testObj chl_dweekday] description],
-                                                  [self.testObj chl_dayInSeason],
+                                                  (unsigned long)[self.testObj chl_dayInSeason],
                                                   [[self.testObj chl_dseason] description],
-                                                  [self.testObj chl_dyear]];
+                                                  (long)[self.testObj chl_dyear]];
     STAssertTrue([testString isEqualToString:@"Sweetmorn 1 Chaos 3165"], @"1.1.1999 (!leap)");
 
     // 1.1.2000 (leap)
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:946692182];
-    testString = [[NSString alloc] initWithFormat:@"%@ %d %@ %d",
+    testString = [[NSString alloc] initWithFormat:@"%@ %lu %@ %ld",
                                                   [[self.testObj chl_dweekday] description],
-                                                  [self.testObj chl_dayInSeason],
+                                                  (unsigned long)[self.testObj chl_dayInSeason],
                                                   [[self.testObj chl_dseason] description],
-                                                  [self.testObj chl_dyear]];
+                                                  (long)[self.testObj chl_dyear]];
     STAssertTrue([testString isEqualToString:@"Sweetmorn 1 Chaos 3166"], @"1.1.2000 (leap)");
 }
 
@@ -91,20 +91,20 @@
 
     // 25.3.1999 (!leap)
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:922329873];
-    testString = [[NSString alloc] initWithFormat:@"%@ %d %@ %d",
+    testString = [[NSString alloc] initWithFormat:@"%@ %lu %@ %ld",
                                                   [[self.testObj chl_dweekday] description],
-                                                  [self.testObj chl_dayInSeason],
+                                                  (unsigned long)[self.testObj chl_dayInSeason],
                                                   [[self.testObj chl_dseason] description],
-                                                  [self.testObj chl_dyear]];
+                                                  (long)[self.testObj chl_dyear]];
     STAssertTrue([testString isEqualToString:@"Prickle-Prickle 11 Discord 3165"], @"23.3.1999 (!leap)");
 
     // 25.3.2000 (leap)
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:953952273];
-    testString = [[NSString alloc] initWithFormat:@"%@ %d %@ %d",
+    testString = [[NSString alloc] initWithFormat:@"%@ %lu %@ %ld",
                                                   [[self.testObj chl_dweekday] description],
-                                                  [self.testObj chl_dayInSeason],
+                                                  (unsigned long)[self.testObj chl_dayInSeason],
                                                   [[self.testObj chl_dseason] description],
-                                                  [self.testObj chl_dyear]];
+                                                  (long)[self.testObj chl_dyear]];
     STAssertTrue([testString isEqualToString:@"Prickle-Prickle 11 Discord 3166"], @"23.3.2000 (leap)");
 }
 
@@ -113,20 +113,20 @@
 
     // 31.12.1999 (!leap)
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:946602061];
-    testString = [[NSString alloc] initWithFormat:@"%@ %d %@ %d",
+    testString = [[NSString alloc] initWithFormat:@"%@ %lu %@ %ld",
                                                   [[self.testObj chl_dweekday] description],
-                                                  [self.testObj chl_dayInSeason],
+                                                  (unsigned long)[self.testObj chl_dayInSeason],
                                                   [[self.testObj chl_dseason] description],
-                                                  [self.testObj chl_dyear]];
+                                                  (long)[self.testObj chl_dyear]];
     STAssertTrue([testString isEqualToString:@"Setting Orange 73 The Aftermath 3165"], @"31.12.1999 (!leap)");
 
     // 31.12.2000 (leap)
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:978224461];
-    testString = [[NSString alloc] initWithFormat:@"%@ %d %@ %d",
+    testString = [[NSString alloc] initWithFormat:@"%@ %lu %@ %ld",
                                                   [[self.testObj chl_dweekday] description],
-                                                  [self.testObj chl_dayInSeason],
+                                                  (unsigned long)[self.testObj chl_dayInSeason],
                                                   [[self.testObj chl_dseason] description],
-                                                  [self.testObj chl_dyear]];
+                                                  (long)[self.testObj chl_dyear]];
     STAssertTrue([testString isEqualToString:@"Setting Orange 73 The Aftermath 3166"], @"31.12.2000 (leap)");
 }
 
@@ -276,54 +276,54 @@
     
     // 1.1.1999
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:915152461];
-    testString = [[NSString alloc] initWithFormat:@"%d %d %d",
-                                                  [self.testObj chl_year],
-                                                  [self.testObj chl_month],
-                                                  [self.testObj chl_day]];
+    testString = [[NSString alloc] initWithFormat:@"%ld %ld %ld",
+                                                  (long)[self.testObj chl_year],
+                                                  (long)[self.testObj chl_month],
+                                                  (long)[self.testObj chl_day]];
     STAssertTrue([testString isEqualToString:@"1999 1 1"], @"1999 1 1");
     
     // 1.1.2000
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:946688461];
-    testString = [[NSString alloc] initWithFormat:@"%d %d %d",
-                                                  [self.testObj chl_year],
-                                                  [self.testObj chl_month],
-                                                  [self.testObj chl_day]];
+    testString = [[NSString alloc] initWithFormat:@"%ld %ld %ld",
+                                                  (long)[self.testObj chl_year],
+                                                  (long)[self.testObj chl_month],
+                                                  (long)[self.testObj chl_day]];
     STAssertTrue([testString isEqualToString:@"2000 1 1"], @"2000 1 1");
 
     
     // 1.1.2004
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:1072918861];
-    testString = [[NSString alloc] initWithFormat:@"%d %d %d",
-                                                  [self.testObj chl_year],
-                                                  [self.testObj chl_month],
-                                                  [self.testObj chl_day]];
+    testString = [[NSString alloc] initWithFormat:@"%ld %ld %ld",
+                                                  (long)[self.testObj chl_year],
+                                                  (long)[self.testObj chl_month],
+                                                  (long)[self.testObj chl_day]];
     STAssertTrue([testString isEqualToString:@"2004 1 1"], @"2004 1 1");
 
     
     // 31.12.1999
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:946602061];
-    testString = [[NSString alloc] initWithFormat:@"%d %d %d",
-                                                  [self.testObj chl_year],
-                                                  [self.testObj chl_month],
-                                                  [self.testObj chl_day]];
+    testString = [[NSString alloc] initWithFormat:@"%ld %ld %ld",
+                                                  (long)[self.testObj chl_year],
+                                                  (long)[self.testObj chl_month],
+                                                  (long)[self.testObj chl_day]];
     STAssertTrue([testString isEqualToString:@"1999 12 31"], @"1999 12 31");
 
     
     // 31.12.2000
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:978224461];
-    testString = [[NSString alloc] initWithFormat:@"%d %d %d",
-                                                  [self.testObj chl_year],
-                                                  [self.testObj chl_month],
-                                                  [self.testObj chl_day]];
+    testString = [[NSString alloc] initWithFormat:@"%ld %ld %ld",
+                                                  (long)[self.testObj chl_year],
+                                                  (long)[self.testObj chl_month],
+                                                  (long)[self.testObj chl_day]];
     STAssertTrue([testString isEqualToString:@"2000 12 31"], @"2000 12 31");
 
     
     // 31.12.2004
     self.testObj = [[NSDate alloc] initWithTimeIntervalSince1970:1104454861];
-    testString = [[NSString alloc] initWithFormat:@"%d %d %d",
-                                                  [self.testObj chl_year],
-                                                  [self.testObj chl_month],
-                                                  [self.testObj chl_day]];
+    testString = [[NSString alloc] initWithFormat:@"%ld %ld %ld",
+                                                  (long)[self.testObj chl_year],
+                                                  (long)[self.testObj chl_month],
+                                                  (long)[self.testObj chl_day]];
     STAssertTrue([testString isEqualToString:@"2004 12 31"], @"2004 12 31");
 }
 
